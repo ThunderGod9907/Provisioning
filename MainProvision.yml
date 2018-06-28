@@ -1,3 +1,5 @@
+---
+
 - hosts: admin
   gather_facts: true
   connection: smart
