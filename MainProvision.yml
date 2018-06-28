@@ -5,7 +5,7 @@
   connection: smart
 
   tasks:
-    - name: "space | Create a partition for the added disk space"
+    - name: "SPACE | Create a partition for the added disk space"
       expect:
         command: /sbin/fdisk /dev/sda
         responses:
@@ -13,7 +13,7 @@
             - 'n'
             - 't'
             - 'w'
-          'Select \(default.*$': 'p'
+          'Select \(default.*$': 'C'
           'Partition number.*$': "{{ next_part }}"
           'First sector.*$': "\n"
           'Last sector.*$': "\n"
