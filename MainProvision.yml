@@ -32,3 +32,4 @@
     - name: "SPACE | Create a physical volume on the new space with LVM"
       command: pvcreate /dev/sda{{ next_part }}
       ignore_errors: yes
+...
